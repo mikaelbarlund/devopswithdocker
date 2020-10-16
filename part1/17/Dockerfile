@@ -36,7 +36,7 @@ ENV MAVEN_HOME $HOME/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 ENV PATH="$MAVEN_HOME/bin:${PATH}"
 
-COPY --chown=$USER entrypoint.sh $HOME/
+COPY --chown=$USER ./entrypoint.sh $HOME/
 RUN chmod +x $HOME/entrypoint.sh
 WORKDIR $HOME/working
 ENTRYPOINT ["/home/developer/entrypoint.sh"]
