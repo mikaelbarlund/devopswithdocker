@@ -2,7 +2,7 @@
 ## 3.3 Building images inside of a container
 Usage:
 ```
-docker run -it -v /var/run/docker.sock:/var/run/docker.sock midas80/dockerbuilder
+docker run -it -rm -v /var/run/docker.sock:/var/run/docker.sock midas80/dockerbuilder
 ```
 The script will prompt for GitHub repository, name of image to push. Once the image has been built the script will prompt for DockerHub credentials.
 
