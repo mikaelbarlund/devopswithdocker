@@ -11,7 +11,7 @@ docker run midas80/devopswithdocker-1-17:latest https://github.com/mikaelbarlund
 
 To make builds faster you can maount your local .m2 folder into the container:
 ```
-docker run -v ~/.m2:/home/developer/.m2 mbl-developer https://github.com/mikaelbarlund/smallmaven " -cp target/smallmaven-1.0-SNAPSHOT.jar com.example.App"
+docker run -v ~/.m2:/home/developer/.m2 midas80/devopswithdocker-1-17:latest https://github.com/mikaelbarlund/smallmaven " -cp target/smallmaven-1.0-SNAPSHOT.jar com.example.App"
 ```
 
 
