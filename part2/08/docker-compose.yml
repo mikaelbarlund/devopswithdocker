@@ -24,12 +24,12 @@ services:
         - compose_db
 
     compose_redis:
-      container_name: compose_db
+      container_name: compose_redis
       image: redis:buster
       restart: unless-stopped
 
     compose_db:
-      container_name: compose_redis
+      container_name: compose_db
       image: postgres
       restart: unless-stopped
       environment:
