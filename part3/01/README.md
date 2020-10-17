@@ -20,7 +20,23 @@ b6065a748951        16 hours ago        /bin/sh -c apt-get update && apt-get ins
 <missing>           3 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
 <missing>           3 weeks ago         /bin/sh -c #(nop) ADD file:23a55d7e93b396e49…   127MB               
 ```
-Total:`~586MB`
+
+### Frontend after
+```
+IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+11a2fe520f7b        14 minutes ago      /bin/sh -c #(nop)  CMD ["start"]                0B                  
+80e4a460c142        14 minutes ago      /bin/sh -c #(nop)  ENTRYPOINT ["npm"]           0B                  
+8870303df8ef        14 minutes ago      /bin/sh -c #(nop)  ENV API_URL=http://localh…   0B                  
+4ae0b7632a6a        14 minutes ago      /bin/sh -c #(nop)  EXPOSE 5000                  0B                  
+e90deb97d3d1        14 minutes ago      /bin/sh -c apt-get update && apt-get install…   363MB               
+322f6c84a249        18 minutes ago      /bin/sh -c #(nop) WORKDIR /app                  0B                  
+107029f1a562        18 minutes ago      /bin/sh -c #(nop)  ENV REPO=https://github.c…   0B                  
+096efd74bb89        3 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B                  
+<missing>           3 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B                  
+<missing>           3 weeks ago         /bin/sh -c rm -rf /var/lib/apt/lists/*          0B                  
+<missing>           3 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
+<missing>           3 weeks ago         /bin/sh -c #(nop) ADD file:23a55d7e93b396e49…   127MB               
+```
 
 ### Backend before
 ```
@@ -42,4 +58,29 @@ b6065a748951        16 hours ago        /bin/sh -c apt-get update && apt-get ins
 <missing>           3 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
 <missing>           3 weeks ago         /bin/sh -c #(nop) ADD file:23a55d7e93b396e49…   127MB               
 ```
-Total:`~405MB`
+
+### Backend after
+```
+IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+fae1d3a33df0        3 minutes ago       /bin/sh -c #(nop)  CMD ["start"]                0B                  
+570f429afe9c        3 minutes ago       /bin/sh -c #(nop)  ENTRYPOINT ["npm"]           0B                  
+435e661a6727        3 minutes ago       /bin/sh -c #(nop)  ENV FRONT_URL=http://loca…   0B                  
+60261e69513c        3 minutes ago       /bin/sh -c #(nop)  EXPOSE 8000                  0B                  
+31692a8f58a9        3 minutes ago       /bin/sh -c npm install                          18.1MB              
+6b47316a3c09        4 minutes ago       /bin/sh -c apt-get update && apt-get install…   150MB               
+f8e362b6c95b        4 minutes ago       /bin/sh -c #(nop) WORKDIR /app                  0B                  
+c50c4512130e        4 minutes ago       /bin/sh -c #(nop)  ENV REPO=https://github.c…   0B                  
+096efd74bb89        3 weeks ago         /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B                  
+<missing>           3 weeks ago         /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B                  
+<missing>           3 weeks ago         /bin/sh -c rm -rf /var/lib/apt/lists/*          0B                  
+<missing>           3 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
+<missing>           3 weeks ago         /bin/sh -c #(nop) ADD file:23a55d7e93b396e49…   127MB               
+```
+
+### Sizes total:
+```
+backendend_size                                    96MB
+frontend_size                                      490MB
+backend_before_size                                404MB
+frontend_before_size                               599MB
+```
