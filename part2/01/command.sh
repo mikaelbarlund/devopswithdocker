@@ -1,2 +1,2 @@
 touch logs.txt
-docker-compose run devopswithdocker2-1
+docker-compose up
