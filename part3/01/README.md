@@ -19,9 +19,10 @@ b6065a748951        16 hours ago        /bin/sh -c apt-get update && apt-get ins
 <missing>           3 weeks ago         /bin/sh -c rm -rf /var/lib/apt/lists/*          0B                  
 <missing>           3 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
 <missing>           3 weeks ago         /bin/sh -c #(nop) ADD file:23a55d7e93b396e49…   127MB               
-
 ```
-## Backend before
+Total:`~586MB`
+
+### Backend before
 ```
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
 67be40c8cd89        16 hours ago        /bin/sh -c #(nop)  CMD ["start"]                0B                  
@@ -40,5 +41,5 @@ b6065a748951        16 hours ago        /bin/sh -c apt-get update && apt-get ins
 <missing>           3 weeks ago         /bin/sh -c rm -rf /var/lib/apt/lists/*          0B                  
 <missing>           3 weeks ago         /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
 <missing>           3 weeks ago         /bin/sh -c #(nop) ADD file:23a55d7e93b396e49…   127MB               
-
 ```
+Total:`~405MB`
