@@ -1,8 +1,8 @@
 # devopswithdocker
 ## 1.17
 
-This conatiner enaböes you to clone a Maven project from github, build it and run the java application.
-It will take the github repository as its firs parameter and the java command as the second parameter.
+This conatiner enables you to clone a Maven project from github, build it and run the java application.
+It will take the github repository as its first parameter and the java command as the second parameter.
 
 Example usage:
 ```
