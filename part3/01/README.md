@@ -79,7 +79,7 @@ c50c4512130e        4 minutes ago       /bin/sh -c #(nop)  ENV REPO=https://gith
 
 ### Sizes total:
 ```
-backendend_size                                    96MB
+backend_size                                       296MB
 frontend_size                                      490MB
 backend_before_size                                404MB
 frontend_before_size                               599MB
