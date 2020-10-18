@@ -6,8 +6,8 @@ I did the following changes:
 2. I do the git chekout in a stage container (FROM alpine/git)
 3. I build the project in a preliminary container (FROM openjdk:11-jdk)
 4. I run the actual application in a debian:strech-slim container where 
- - I install the self-packaged minimal-java
- - I copy in the built jar-file
+   - I install the self-packaged minimal-java
+   - I copy in the built jar-file
 5. I run the app as non-root user
 
 Size of image was reduced from 614MB to 126 MB:
