@@ -21,7 +21,7 @@ FROM node:current-alpine3.12
 ARG APP_HOME
 WORKDIR $APP_HOME
 COPY --from=BUILD_IMAGE $APP_HOME/dist ./dist
-COPY --from=BUILD_IMAGE $APP_HOME/node_modules ./node_modules
+#COPY --from=BUILD_IMAGE $APP_HOME/node_modules ./node_modules
 
 RUN npm install -g serve
 
